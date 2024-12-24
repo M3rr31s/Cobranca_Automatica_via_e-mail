@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .invoice-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .invoice-table th, .invoice-table td {
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            text-align: left;
+        }
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="email-container">
+        <div class="header">
+            <h2>Invoice Notification</h2>
+        </div>
+
+        <div class="content">
+            <p>Dear [Client Name],</p>
+            <p>This is a reminder about the outstanding payment for your recent purchase. Below are the details of your invoice:</p>
+
+            <table class="invoice-table">
+                <tr>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>[Product Name]</td>
+                    <td>[Quantity]</td>
+                    <td>$[Unit Price]</td>
+                    <td>$[Total]</td>
+                </tr>
+            </table>
+
+            <p>Please make the payment by the due date to avoid additional charges. If you have already made the payment, please disregard this message.</p>
+
+            <p><strong>Client Information:</strong></p>
+            <ul>
+                <li><strong>Address:</strong> [Client Address]</li>
+                <li><strong>City:</strong> [Client City]</li>
+                <li><strong>State:</strong> [Client State]</li>
+                <li><strong>Phone:</strong> [Client Phone]</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>If you need more information, contact us by email at <a href="mailto:contato@greentechsolutions.com.br">contato@greentechsolutions.com.br</a> or call us at (11) 98765-4321.</p>
+            <p>Sincerely,</p>
+            <p><strong>GreenTech Solutions</strong><br>
+            Avenida Paulista, 1234, São Paulo, SP, Brasil</p>
+        </div>
+    </div>
+
+</body>
+</html>
