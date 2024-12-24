@@ -1,0 +1,41 @@
+Automated Debt Collection System
+
+This project is an automated solution designed to identify customers with outstanding debts, generate customized email reminders, and send them through an efficient, automated process. It combines database management, data filtering, email automation, and HTML email formatting into a streamlined workflow.
+
+Features
+
+Database Integration: Uses a SQLite .db file with fictitious customer data.
+
+Data Filtering: Filters customers with outstanding debts and organizes the data into a dictionary format.
+
+Automated Email Notifications: Sends personalized debt reminders using the smtplib library.
+
+Custom HTML Emails: Formats emails with an attractive layout and inserts customer-specific data dynamically.
+
+Complete Automation: Bundled into an executable .app file for easy deployment and use.
+
+How It Works
+
+Database Creation: A SQLite database (.db file) is initialized with sample customer data.
+
+Database Connection: A script establishes a connection to the database and retrieves the required information.
+
+Data Filtering: A Python script filters the database entries to identify customers with unpaid debts. The results are stored in a dictionary.
+
+Email Setup: Using the smtplib library, a script is created to send emails through an SMTP server.
+
+HTML Email Design: A custom .html file is crafted to provide a professional and visually appealing email format. Customer-specific data from the dictionary is dynamically inserted.
+
+Automation: All components are integrated into an application (.app file) that automates the process from database filtering to email delivery.
+
+Technologies Used
+
+Python: Core language for scripting and automation.
+
+SQLite: Database used for storing and retrieving customer data.
+
+smtplib: Library for sending emails via SMTP.
+
+HTML: Used to create the email template.
+
+CSS: For styling the HTML email.
